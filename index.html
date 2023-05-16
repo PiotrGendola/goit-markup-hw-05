@@ -30,7 +30,9 @@
                     <nav>
                         <ul class="menu">
                             <li>
-                                <a class="nav-font" href="./index.html"
+                                <a
+                                    class="nav-font current-nav"
+                                    href="./index.html"
                                     >Agencja</a
                                 >
                             </li>
@@ -78,9 +80,20 @@
                 <h1 class="h1-style">
                     EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
                 </h1>
-                <button class="studio-button" type="button">
+                <button data-modal-open class="studio-button" type="button">
                     Zamów usługe
                 </button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button
+                            class="close-button"
+                            data-modal-close
+                            type="button"
+                        >
+                            X
+                        </button>
+                    </div>
+                </div>
             </section>
             <section class="section">
                 <div class="container">
@@ -153,28 +166,41 @@
                     <h2 class="h2-style">Czym się zajmujemy</h2>
                     <ul class="photos">
                         <li>
-                            <img
-                                src="images/software-architecture.jpg"
-                                alt="software-architecture"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="img-container">
+                                <img
+                                    src="images/software-architecture.jpg"
+                                    alt="software-architecture"
+                                    width="370"
+                                    height="294"
+                                />
+                                <p class="img-description">
+                                    APLIKACJE KOMPUTEROWE
+                                </p>
+                            </div>
                         </li>
                         <li>
-                            <img
-                                src="images/mobile-app-development.jpg"
-                                alt="mobile app development"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="img-container">
+                                <img
+                                    src="images/mobile-app-development.jpg"
+                                    alt="mobile app development"
+                                    width="370"
+                                    height="294"
+                                />
+                                <p class="img-description">APLIKACJE MOBILNE</p>
+                            </div>
                         </li>
                         <li>
-                            <img
-                                src="images/web-design.jpg"
-                                alt="web design"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="img-container">
+                                <img
+                                    src="images/web-design.jpg"
+                                    alt="web design"
+                                    width="370"
+                                    height="294"
+                                />
+                                <p class="img-description">
+                                    ROZWIĄZANIA GRAFICZNE
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -498,5 +524,6 @@
                 </li>
             </ul>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
