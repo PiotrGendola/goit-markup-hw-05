@@ -110,6 +110,9 @@ ul {
     font-weight: 500;
     text-decoration: none;
     line-height: 1.2;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-nav {
@@ -190,6 +193,9 @@ ul {
     padding: 6px 23px;
     border-radius: 4px;
     border: none;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -202,6 +208,9 @@ ul {
 .figure {
     margin: 0 auto;
     width: 370px;
+    transition-property: box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .figure:hover {
@@ -349,6 +358,9 @@ ul {
     fill: var(--icon-color);
     display: flex;
     gap: 10px;
+    transition-property: color, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-top:focus,
@@ -371,6 +383,9 @@ ul {
     color: var(--bottom-link-color);
     text-decoration: none;
     font-style: normal;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-bottom:focus,
@@ -404,12 +419,15 @@ ul {
     width: 44px;
     margin: 0 5px;
     padding: 12px;
+    border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon:focus,
 .icon:hover {
     background-color: var(--web-style-color);
-    border-radius: 50%;
     fill: #ffffff;
 }
 
@@ -426,6 +444,9 @@ ul {
     width: 44px;
     margin: 0 5px;
     padding: 12px;
+    transition-property: background-color, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon:focus,
@@ -457,6 +478,10 @@ ul {
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     margin: 0 15px;
+    cursor: pointer;
+    transition-property: border-color, fill;
+    transition-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-icon-yaco {
@@ -491,7 +516,6 @@ ul {
 .our-clients-icon-company-box:focus {
     fill: var(--web-style-color);
     border-color: var(--web-style-color);
-    cursor: pointer;
 }
 
 .social-media {
@@ -539,7 +563,10 @@ ul {
     left: 0;
     right: 0;
     background: rgba(33, 150, 243, 0.9);
-    padding: 10px;
+    padding: 49px 45px 49px 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
     color: #ffffff;
     transform: translateY(100%);
     transition-property: transform;
